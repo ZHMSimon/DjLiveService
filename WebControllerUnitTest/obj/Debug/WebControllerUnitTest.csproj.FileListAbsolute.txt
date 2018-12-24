@@ -1,0 +1,7 @@
+D:\project\直播服务管理平台\SourceCode\DjLiveService\WebControllerUnitTest\bin\Debug\WebControllerUnitTest.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\WebControllerUnitTest\bin\Debug\WebControllerUnitTest.pdb
+D:\project\直播服务管理平台\SourceCode\DjLiveService\WebControllerUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\WebControllerUnitTest\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\WebControllerUnitTest\obj\Debug\WebControllerUnitTest.csprojResolveAssemblyReference.cache
+D:\project\直播服务管理平台\SourceCode\DjLiveService\WebControllerUnitTest\obj\Debug\WebControllerUnitTest.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\WebControllerUnitTest\obj\Debug\WebControllerUnitTest.pdb

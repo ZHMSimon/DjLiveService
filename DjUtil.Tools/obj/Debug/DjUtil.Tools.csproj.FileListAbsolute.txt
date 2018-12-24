@@ -1,0 +1,7 @@
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjUtil.Tools\bin\Debug\DjUtil.Tools.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjUtil.Tools\bin\Debug\DjUtil.Tools.pdb
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjUtil.Tools\bin\Debug\log4net.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjUtil.Tools\bin\Debug\log4net.xml
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjUtil.Tools\obj\Debug\DjUtil.Tools.csprojResolveAssemblyReference.cache
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjUtil.Tools\obj\Debug\DjUtil.Tools.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjUtil.Tools\obj\Debug\DjUtil.Tools.pdb

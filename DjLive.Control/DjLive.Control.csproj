@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{005E6B86-4E79-4011-A5A8-12D68253E2E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DjLive.Control</RootNamespace>
+    <AssemblyName>DjLive.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\ConfModel\LiveService\ApiOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\DvRecordOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\EngineOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\HdsOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\HeartBeatOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\HlsOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\HostOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\HttpHookerOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\HttpOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\IngestOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\MergedReadOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\RemuxOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\SecurityOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\SecuritySetting.cs" />
+    <Compile Include="Model\ConfModel\LiveService\StatOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\StreamCasterOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\TranscodeOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\VFilterOption.cs" />
+    <Compile Include="Model\ConfModel\LiveService\VHostOption.cs" />
+    <Compile Include="Model\WebModel\ApiUrlManager.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\CallbackResponseBase.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\HlsNotifyResponse.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\OnCloseResponse.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\OnConnectResponse.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\OnDvRecordResponse.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\OnPlayResponse.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\OnPublishResponse.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\OnStopResponse.cs" />
+    <Compile Include="Model\WebModel\CallBackResponse\OnUnPublishResponse.cs" />
+    <Compile Include="Model\WebModel\Data\AudioInfo.cs" />
+    <Compile Include="Model\WebModel\Data\AuthorData.cs" />
+    <Compile Include="Model\WebModel\Data\AuthorRoot.cs" />
+    <Compile Include="Model\WebModel\Data\ClientRoot.cs" />
+    <Compile Include="Model\WebModel\Data\ClientsItem.cs" />
+    <Compile Include="Model\WebModel\Data\FeatherData.cs" />
+    <Compile Include="Model\WebModel\Data\FeatherRoot.cs" />
+    <Compile Include="Model\WebModel\Data\Kbps.cs" />
+    <Compile Include="Model\WebModel\Data\LiveHostSystemSummary.cs" />
+    <Compile Include="Model\WebModel\Data\LiveServiceSummary.cs" />
+    <Compile Include="Model\WebModel\Data\MemData.cs" />
+    <Compile Include="Model\WebModel\Data\MemRoot.cs" />
+    <Compile Include="Model\WebModel\Data\PublishState.cs" />
+    <Compile Include="Model\WebModel\Data\ResourceUsedData.cs" />
+    <Compile Include="Model\WebModel\Data\ResourceUsedRoot.cs" />
+    <Compile Include="Model\WebModel\Data\SelfProcessStatData.cs" />
+    <Compile Include="Model\WebModel\Data\SelfProcessStatRoot.cs" />
+    <Compile Include="Model\WebModel\Data\StreamRoot.cs" />
+    <Compile Include="Model\WebModel\Data\StreamsItem.cs" />
+    <Compile Include="Model\WebModel\Data\SummaryData.cs" />
+    <Compile Include="Model\WebModel\Data\SummaryRoot.cs" />
+    <Compile Include="Model\WebModel\Data\SystemProcStatsData.cs" />
+    <Compile Include="Model\WebModel\Data\SystemProcStatsRoot.cs" />
+    <Compile Include="Model\WebModel\Data\VersionData.cs" />
+    <Compile Include="Model\WebModel\Data\VersionRoot.cs" />
+    <Compile Include="Model\WebModel\Data\VhostHls.cs" />
+    <Compile Include="Model\WebModel\Data\VhostRoot.cs" />
+    <Compile Include="Model\WebModel\Data\VhostsItem.cs" />
+    <Compile Include="Model\WebModel\Data\VideoInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\IDjLiveInterface.cs" />
+    <Compile Include="Service\Impl\DjLiveService.cs" />
+    <Compile Include="Service\Impl\LiveServiceConfig.cs" />
+    <Compile Include="UtilTool\ConfUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DjUtil.Tools\DjUtil.Tools.csproj">
+      <Project>{2beb1395-ff82-460e-a656-a4ecec6c817c}</Project>
+      <Name>DjUtil.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33620050-8E12-44CD-8155-F312C6866BB4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DjLive.Sdk</RootNamespace>
+    <AssemblyName>DjLive.Sdk</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiClient\ApiProxy.cs" />
+    <Compile Include="ApiClient\ContentType.cs" />
+    <Compile Include="ApiClient\HttpMethod.cs" />
+    <Compile Include="ApiManager.cs" />
+    <Compile Include="ApiService\IVhostServiceInterface.cs" />
+    <Compile Include="ApiService\IRecordTemplateServiceInterface.cs" />
+    <Compile Include="ApiService\ISecurePolicyServiceInterface.cs" />
+    <Compile Include="ApiService\IStateServiceInterface.cs" />
+    <Compile Include="ApiService\ITranscodeTemplateServiceInterface.cs" />
+    <Compile Include="Model\HttpScheme.cs" />
+    <Compile Include="Model\ServicePoint.cs" />
+    <Compile Include="ApiService\ILogoTemplateServiceInterface.cs" />
+    <Compile Include="ApiClient\ApiAttribute.cs" />
+    <Compile Include="Util\ConfigValue.cs" />
+    <Compile Include="Util\HttpUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\JsonConvert.cs" />
+    <Compile Include="Util\SdkErrorMessage.cs" />
+    <Compile Include="Util\SdkErrorType.cs" />
+    <Compile Include="Util\Singleton.cs" />
+    <Compile Include="TokenManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DjLive.SdkModel\DjLive.SdkModel.csproj">
+      <Project>{2C54FD66-A5F6-4058-9F95-5FC61B9DC93B}</Project>
+      <Name>DjLive.SdkModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.SdkModel\bin\Debug\DjLive.SdkModel.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.SdkModel\bin\Debug\DjLive.SdkModel.pdb
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.SdkModel\obj\Debug\DjLive.SdkModel.csprojResolveAssemblyReference.cache
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.SdkModel\obj\Debug\DjLive.SdkModel.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.SdkModel\obj\Debug\DjLive.SdkModel.pdb

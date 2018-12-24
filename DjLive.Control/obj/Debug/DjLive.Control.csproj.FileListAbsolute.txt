@@ -1,0 +1,13 @@
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\DjLive.Control.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\DjLive.Control.pdb
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\DjUtil.Tools.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\Newtonsoft.Json.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\Renci.SshNet.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\log4net.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\DjUtil.Tools.pdb
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\Newtonsoft.Json.xml
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\Renci.SshNet.xml
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\bin\Debug\log4net.xml
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\obj\Debug\DjLive.Control.csprojResolveAssemblyReference.cache
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\obj\Debug\DjLive.Control.dll
+D:\project\直播服务管理平台\SourceCode\DjLiveService\DjLive.Control\obj\Debug\DjLive.Control.pdb

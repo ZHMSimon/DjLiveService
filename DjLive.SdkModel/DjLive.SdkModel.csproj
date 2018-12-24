@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C54FD66-A5F6-4058-9F95-5FC61B9DC93B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DjLive.SdkModel</RootNamespace>
+    <AssemblyName>DjLive.SdkModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiCode.cs" />
+    <Compile Include="ApiMessage.cs" />
+    <Compile Include="CallbackResponseBase.cs" />
+    <Compile Include="Cookie\AuthCookieModel.cs" />
+    <Compile Include="DjLiveRequest.cs" />
+    <Compile Include="DjLiveResponse.cs" />
+    <Compile Include="Enum\AccountRoleType.cs" />
+    <Compile Include="Enum\AccountStatType.cs" />
+    <Compile Include="Enum\ExceptionType.cs" />
+    <Compile Include="Enum\OrderType.cs" />
+    <Compile Include="Enum\ResultType.cs" />
+    <Compile Include="Enum\SourceStreamType.cs" />
+    <Compile Include="Enum\StateType.cs" />
+    <Compile Include="Enum\VideoCodeType.cs" />
+    <Compile Include="Model\AccountFilterModel.cs" />
+    <Compile Include="Model\AccountModel.cs" />
+    <Compile Include="Model\AudioOptionModel.cs" />
+    <Compile Include="Model\BoardCastRoomModel.cs" />
+    <Compile Include="Model\DomainFilterModel.cs" />
+    <Compile Include="Model\DomainModel.cs" />
+    <Compile Include="Model\KeyNamePair.cs" />
+    <Compile Include="Model\LiveClientModel.cs" />
+    <Compile Include="Model\LiveStreamModel.cs" />
+    <Compile Include="Model\LoginModel.cs" />
+    <Compile Include="Model\LogoTemplateModel.cs" />
+    <Compile Include="Model\ServerNodeModel.cs" />
+    <Compile Include="Model\RecordTemplateModel.cs" />
+    <Compile Include="Model\SecurePolicyModel.cs" />
+    <Compile Include="Model\TokenModel.cs" />
+    <Compile Include="Model\TranscodeTemplateModel.cs" />
+    <Compile Include="Model\LiveVHostModel.cs" />
+    <Compile Include="Model\VideoOptionModel.cs" />
+    <Compile Include="Model\VodItemModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exception\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

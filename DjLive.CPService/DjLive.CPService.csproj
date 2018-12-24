@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9636489C-BC7E-498B-8FDF-1E49D17C9222}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DjLive.CPService</RootNamespace>
+    <AssemblyName>DjLive.CPService</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Impl\AccountServiceImpl.cs" />
+    <Compile Include="Impl\ServerNodeServiceImpl.cs" />
+    <Compile Include="Impl\RecordTemplateServiceImpl.cs" />
+    <Compile Include="Impl\StateServiceImpl.cs" />
+    <Compile Include="Impl\TranscodeTemplateServiceImpl.cs" />
+    <Compile Include="Impl\SecurePolicyServiceImpl.cs" />
+    <Compile Include="Impl\LogoTemplateServiceImpl.cs" />
+    <Compile Include="Impl\VhostServiceImpl.cs" />
+    <Compile Include="Interface\IAccountServiceInterface.cs" />
+    <Compile Include="Interface\IVhostServiceInterface.cs" />
+    <Compile Include="Interface\IInitializtionInterface.cs" />
+    <Compile Include="Interface\IServerNodeServiceInterface.cs" />
+    <Compile Include="Interface\IStateServiceInterface.cs" />
+    <Compile Include="Interface\IRecordTemplateServiceInterface.cs" />
+    <Compile Include="Interface\ITranscodeTemplateServiceInterface.cs" />
+    <Compile Include="Interface\ISecurePolicyServiceInterface.cs" />
+    <Compile Include="Interface\ILogoServiceInterface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\AccountValidateMessage.cs" />
+    <Compile Include="Util\ConfigurationValue.cs" />
+    <Compile Include="Util\ServiceExtention.cs" />
+    <Compile Include="Util\ServiceResultBase.cs" />
+    <Compile Include="Util\ServiceResultCode.cs" />
+    <Compile Include="Util\ServiceResultMessage.cs" />
+    <Compile Include="Util\ValidateType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DjLive.Control\DjLive.Control.csproj">
+      <Project>{005e6b86-4e79-4011-a5a8-12d68253e2e0}</Project>
+      <Name>DjLive.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DjLive.CPDao\DjLive.CPDao.csproj">
+      <Project>{03926c85-9033-4001-8e32-43c8b5b66d71}</Project>
+      <Name>DjLive.CPDao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DjLive.SdkModel\DjLive.SdkModel.csproj">
+      <Project>{2c54fd66-a5f6-4058-9f95-5fc61b9dc93b}</Project>
+      <Name>DjLive.SdkModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DjUtil.Tools\DjUtil.Tools.csproj">
+      <Project>{2beb1395-ff82-460e-a656-a4ecec6c817c}</Project>
+      <Name>DjUtil.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
